@@ -1,0 +1,22 @@
+public class Coche {
+    private int numeroPuertas;
+
+    public Coche() {
+        numeroPuertas = 0; // Inicialmente el coche no tiene puertas
+    }
+
+    public void incrementarPuertas() {
+        numeroPuertas++;
+    }
+
+    public int getNumeroPuertas() {
+        return numeroPuertas;
+    }
+
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.incrementarPuertas();
+
+        System.out.println("El número de puertas del coche es: " + miCoche.getNumeroPuertas());
+    }
+}
